@@ -2,9 +2,13 @@
 v2board后端sosga一键脚本
 
 原脚本：
+```bash
 bash <(curl -Ls https://raw.githubusercontent.com/sprov065/soga/master/install.sh)
+```
 自己备份：
+```bash
 bash <(curl -Ls https://raw.githubusercontent.com/gugd123/v2b/master/install%20.sh)
+```
 
 、同步时间为北京时间：一般不需要，保险起见，建议还是同步一下。
 
