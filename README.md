@@ -11,21 +11,22 @@ bash <(curl -Ls https://raw.githubusercontent.com/gugd123/v2b/master/install%20.
 ```
 
 、同步时间为北京时间：一般不需要，保险起见，建议还是同步一下。
-
+```bash
 1：yum -y install ntpdate
 2：timedatectl set-timezone Asia/Shanghai
 3：ntpdate ntp1.aliyun.com
-
+```
 3、关闭防火墙：必须要做，否则大部分对接上节点但是连接都会无网络连接。
-
+```bash
 1：systemctl start supervisord
 2：systemctl disable firewalld
 3：systemctl stop firewalld
+```
 
 1、按照前面的添加好节点，把防火墙或时间同步下，这里就不加上了，输入下列命令安装soga；
-
+```bash
 bash <(curl -Ls https://raw.githubusercontent.com/sprov065/soga/master/install.sh)
-
+```
 
 2、安装好后命令行输入：vi /etc/soga/soga.conf 编辑以下几个地方（面板类型、面板域名、通信密钥、节点ID），其它根据自身需求配置；
 
